@@ -4,6 +4,8 @@ version := "0.1"
 
 scalaVersion := "2.11.8"
 
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.0" % "test"
+
 // Stolen from https://tpolecat.github.io/2014/04/11/scalac-flags.html
 scalacOptions ++= Seq(
   "-deprecation",

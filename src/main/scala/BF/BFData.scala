@@ -31,5 +31,8 @@ case class BFData(data: Vector[Int], index: Int) {
 
 object BFData {
   def apply(): BFData = BFData(Vector(0), 0)
-  def apply(values: Int*): BFData = BFData(values.toVector, 0)
+  def apply(values: Int*): BFData = values match {
+    case Nil => apply()
+    case _ => BFData(values.toVector, 0)
+  }
 }
