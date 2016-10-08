@@ -7,7 +7,7 @@ object Test extends App {
   import BF.BFData
   val helloWorld = "++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>."
   val empty = BFData()
-  BFProgram(helloWorld).run(empty)
+  BFProgram(helloWorld).exec(empty)
 
   import BF.BFOps._
   val thing = (1000)("[->+<]>")(3000)

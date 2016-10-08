@@ -22,3 +22,20 @@ scalacOptions ++= Seq(
   "-Xfuture",
   "-Ywarn-unused-import"     // 2.11 only
 )
+
+wartremoverErrors ++= Seq(
+  Wart.Any,
+  Wart.Any2StringAdd,
+  Wart.AsInstanceOf,
+  Wart.DefaultArguments,
+  Wart.EitherProjectionPartial,
+  Wart.IsInstanceOf,
+  Wart.ListOps,
+  Wart.Null,
+  Wart.OptionPartial,
+  Wart.Product,
+  Wart.Return,
+  Wart.Serializable,
+  Wart.Throw,
+  Wart.TryPartial,
+  Wart.Var)
