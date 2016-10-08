@@ -3,8 +3,8 @@ package BF
 object BFOperation {
   def Right: BFOperation = _.moveRight
   def Left: BFOperation = _.moveLeft
-  def Plus: BFOperation = _++
-  def Minus: BFOperation = _--
+  def Plus: BFOperation = _.++
+  def Minus: BFOperation = _.--
   def Out: BFOperation = _.out
   def In: BFOperation = _.in('z')
   def Noop: BFOperation = identity _
