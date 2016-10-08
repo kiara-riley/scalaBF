@@ -9,7 +9,7 @@ object BFOps {
     def apply(prog: String): Int => Int = apply(BFProgram(prog))
 
     def apply(prog: BFProgram): Int => Int = { y =>
-      prog.run(x,y).get
+      prog.run(x, y).get
     }
   }
 }
